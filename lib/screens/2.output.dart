@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pawjitsu/constants.dart';
+import 'dart:math';
+// import 'package:pawjitsu/constants.dart';
 
 class PawJitsuResult extends StatelessWidget {
   final String? userName;
@@ -198,19 +199,44 @@ class PawJitsuResult extends StatelessWidget {
     ];
 
     // Matching user selections to the correct animal type
-    return animalOptions.firstWhere(
-      (option) =>
-          option['topOrBottom'].contains(topOrBottom) &&
+    // return animalOptions.firstWhere(
+    //   (option) =>
+    //       option['topOrBottom'].contains(topOrBottom) &&
+    //       option['favoriteSubmission'].contains(favoriteSubmission) &&
+    //       option['trainingFrequency'].contains(trainingFrequency) &&
+    //       option['tapResponse'].contains(tapResponse),
+    //   orElse: () => {
+    //     'animalType': 'Golden Retriever',
+    //     'resultDescription':
+    //         'Friendly and approachable, just like a Golden Retriever!',
+    //     'imageUrl': 'images/goldenretriever.jpeg'
+    //   },
+    // );
+
+    // Filter matching animals based on user input
+    List<Map<String, dynamic>> matchingAnimals = animalOptions.where((option) {
+      return option['topOrBottom'].contains(topOrBottom) &&
           option['favoriteSubmission'].contains(favoriteSubmission) &&
           option['trainingFrequency'].contains(trainingFrequency) &&
-          option['tapResponse'].contains(tapResponse),
-      orElse: () => {
+          option['tapResponse'].contains(tapResponse);
+    }).toList();
+
+    // If no match is found, default to Golden Retriever
+    if (matchingAnimals.isEmpty) {
+      return {
         'animalType': 'Golden Retriever',
         'resultDescription':
             'Friendly and approachable, just like a Golden Retriever!',
-        'imageUrl': 'images/goldenretriever.jpeg'
-      },
-    );
+        'imageUrl': 'images/goldenretriever.jpeg',
+      };
+    }
+
+    // Randomly select one matching animal
+    final random = Random();
+    Map<String, dynamic> randomAnimal =
+        matchingAnimals[random.nextInt(matchingAnimals.length)];
+
+    return randomAnimal;
   }
 
   @override
