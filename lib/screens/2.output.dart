@@ -222,14 +222,14 @@ class PawJitsuResult extends StatelessWidget {
     }).toList();
 
     // If no match is found, default to Golden Retriever
-    if (matchingAnimals.isEmpty) {
-      return {
-        'animalType': 'Golden Retriever',
-        'resultDescription':
-            'Friendly and approachable, just like a Golden Retriever!',
-        'imageUrl': 'images/goldenretriever.jpeg',
-      };
-    }
+    // if (matchingAnimals.isEmpty) {
+    //   return {
+    //     'animalType': 'Golden Retriever',
+    //     'resultDescription':
+    //         'Friendly and approachable, just like a Golden Retriever!',
+    //     'imageUrl': 'images/goldenretriever.jpeg',
+    //   };
+    // }
 
     // Randomly select one matching animal
     final random = Random();
