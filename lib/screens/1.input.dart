@@ -114,6 +114,8 @@ class FormContainerState extends State<FormContainer> {
                     decoration: const InputDecoration(
                         labelText: 'Do you prefer top position or pull guard?'),
                     items: const [
+                      DropdownMenuItem(
+                          value: 'noPreference', child: Text('No preference')),
                       DropdownMenuItem(value: 'top', child: Text('Prefer top')),
                       DropdownMenuItem(
                           value: 'bottom', child: Text('Pull Guard')),

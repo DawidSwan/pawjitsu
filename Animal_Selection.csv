@@ -1,0 +1,46 @@
+﻿Options,Housecat,Golden Retriever,Koala,Bush Baby,Penguin,Hamster,Hedgehog,Dolphin,"Panda
+",Great Dane,Jack Russell,Zebra,Giraffe,Meerkat,Shark,Honey Badger,Orca,"Black Jaguar
+","Tiger
+","Lion
+","Wolf
+"
+topOrBottom,No preference,No preference,No preference,No preference,No preference,No preference,No preference,"Bottom
+","Top
+","Bottom
+","Top
+","Top
+","Bottom
+","Top
+","Bottom
+","Top
+","Bottom
+","Top
+","Top
+","Top
+","Bottom
+"
+favoriteSubmission,"I don't have a favorite yet
+
+","I don't have a favorite yet
+
+","I don't have a favorite yet
+
+","I don't have a favorite yet
+
+","I don't have a favorite yet
+
+","I don't have a favorite yet
+
+","I don't have a favorite yet
+
+",Any,Any,Any,Any,Any,Any,Any,Any,Any,Any,Any,Any,Any,Any
+trainingFrequency,"1, 2, 3","1,2,3","1,2,3","1,2,3","1,2,3","1,2,3","1,2,3","3,4","3,4","3,4","3,4","3,4","3,4","3,4","5, 6","5, 6","5, 6","5, 6","5, 6","5, 6","5, 6"
+tapResponse,"Instantly, try to get out","Instantly, try to get out","Instantly, try to get out","Instantly, try to get out","Instantly, try to get out","Instantly, try to get out","Instantly, try to get out",Try to get out,Try to get out,Try to get out,Try to get out,Try to get out,Try to get out,Try to get out,"Try to get out,
+Never","Try to get out,
+Never","Try to get out,
+Never","Try to get out,
+Never","Try to get out,
+Never","Try to get out,
+Never","Try to get out,
+Never"
+Image Path,images/housecat.jpeg,images/goldenretriever.jpeg,images/koala.jpeg,images/bushbaby.jpeg,images/penguin.jpeg,images/hamster.jpeg,images/hedgehog.jpeg,images/dolphin.jpeg,images/panda.jpeg,images/greatdane.jpeg,images/jackrussel.jpeg,images/zebra.jpeg,images/giraffe.jpeg,images/meerkat.jpeg,images/shark.jpeg,images/badger.jpeg,images/orca.jpeg,images/jackrussell.jpeg,images/tiger.jpeg,images/lion.jpeg,images/wolf.jpeg
