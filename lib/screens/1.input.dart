@@ -186,7 +186,7 @@ class FormContainerState extends State<FormContainer> {
                       DropdownMenuItem(
                           value: 'five', child: Text('Five times a week')),
                       DropdownMenuItem(
-                          value: 'more',
+                          value: 'six',
                           child: Text('More than five times a week')),
                     ],
                     onChanged: (value) {
@@ -251,3 +251,7 @@ class FormContainerState extends State<FormContainer> {
     );
   }
 }
+
+
+//'noFavorite','armbar','triangle','heelhook','rearNakedChoke','guillotine','kimura','omoplata'
+                
